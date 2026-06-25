@@ -1,0 +1,138 @@
+/* ==========================
+   RESET GENERAL
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* ==========================
+   NAVBAR FLEXBOX
+========================== */
+.navbar{
+    background:#1e3a8a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#fbbf24;
+}
+
+/* ==========================
+   CONTENIDO
+========================== */
+.contenedor{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#1e3a8a;
+}
+
+.descripcion{
+    text-align:center;
+    margin-bottom:30px;
+    color:#555;
+}
+
+/* ==========================
+   GRID DASHBOARD
+========================== */
+.grid-dashboard{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:20px;
+}
+
+/* ==========================
+   TARJETAS
+========================== */
+.tarjeta{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.tarjeta h2{
+    margin-bottom:10px;
+    color:#1e3a8a;
+}
+
+.tarjeta p{
+    color:#666;
+}
+
+.tarjeta:hover{
+    background:#dbeafe;
+    transform:translateY(-8px);
+}
+
+/* ==========================
+   RESPONSIVE TABLET
+========================== */
+@media (max-width: 992px){
+
+    .grid-dashboard{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+}
+
+/* ==========================
+   RESPONSIVE CELULAR
+========================== */
+@media (max-width: 600px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .menu{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .grid-dashboard{
+        grid-template-columns:1fr;
+    }
+
+}
