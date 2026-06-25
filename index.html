@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard de Daniel Alejandro Yujra Yujra</title>
+    <meta name="description" content="Panel académico con cursos, tareas, progreso y logros.">
+    <title>EduBoard | Panel Académico</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <!-- Barra de Navegación -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
+    <header class="encabezado">
+        <nav class="navbar" aria-label="Navegación principal">
+            <div class="logo" aria-label="EduBoard">
                 🎓 EduBoard
             </div>
 
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="#" class="activo">Inicio</a></li>
                 <li><a href="#">Cursos</a></li>
                 <li><a href="#">Tareas</a></li>
                 <li><a href="#">Perfil</a></li>
@@ -25,12 +26,12 @@
     </header>
 
     <!-- Contenido Principal -->
-    <main class="contenedor">
+    <main class="contenedor" aria-labelledby="titulo-dashboard">
 
-        <h1>Dashboard de Daniel Alejandro Yujra/h1>
+        <h1 id="titulo-dashboard">Dashboard de Daniel Alejandro Yujra Yujra</h1>
         <p class="descripcion">
             Bienvenido al panel académico. Aquí podrás visualizar tu progreso,
-            tareas pendientes y recursos importantes. sobre la materia
+            tareas pendientes y recursos importantes de la materia.
         </p>
 
         <!-- Grid de Tarjetas -->
@@ -39,26 +40,34 @@
             <article class="tarjeta">
                 <h2>📚 Cursos</h2>
                 <p>Accede a todos tus cursos matriculados.</p>
+                <a href="#" class="boton">Ver cursos</a>
             </article>
 
             <article class="tarjeta">
                 <h2>📝 Tareas</h2>
                 <p>Consulta actividades y fechas de entrega.</p>
+                <a href="#" class="boton">Ver tareas</a>
             </article>
 
             <article class="tarjeta">
                 <h2>📊 Progreso</h2>
                 <p>Visualiza tus avances académicos.</p>
+                <a href="#" class="boton">Ver progreso</a>
             </article>
 
             <article class="tarjeta">
                 <h2>🏆 Logros</h2>
                 <p>Revisa tus reconocimientos y certificados.</p>
+                <a href="#" class="boton">Ver logros</a>
             </article>
 
         </section>
 
     </main>
+
+    <footer class="pie">
+        <p>EduBoard · Panel académico personal</p>
+    </footer>
 
 </body>
 </html>
